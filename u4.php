@@ -22,6 +22,7 @@ echo "Session active. Session count: " . $_SESSION['session_count'];
 
 ?>
 
+---------------------------------------------------------------------------------------------------------------------------------------------
 
 Write a PHP script to display the last time the session was accessed by the user.
 <?php
@@ -40,9 +41,7 @@ if (isset($_SESSION['last_access_time'])) {
 
 ?>
 
-
-
-
+---------------------------------------------------------------------------------------------------------------------------------------------
 
 Write a PHP script to set a cookie and a session variable with the same name. Display their values to compare.
 <?php
@@ -68,6 +67,8 @@ echo "Session variable value: " . $_SESSION[$cookieName];
 
 ?>
 
+---------------------------------------------------------------------------------------------------------------------------------------------
+
 Write a PHP script to retrieve and display user preferences stored in the session variable.
 <?php
 session_save_path('i:/custom/');
@@ -88,6 +89,8 @@ else
 }
 
 ?>
+---------------------------------------------------------------------------------------------------------------------------------------------
+
 
 Write a PHP script to set a session timeout after 30 minutes of inactivity.
 <?php
@@ -120,6 +123,9 @@ if (isset($_SESSION['LAST_ACTIVITY'])) {
     echo "Session started.";
 }
 ?>
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
 
 Write a PHP calculator class which will accept two values as arguments, then add them, subtract them, multiply them together, or divide them on request.
 For example :
@@ -175,6 +181,8 @@ echo $mycalc->subtract() . "\n"; // Displays 6
 echo $mycalc->divide() . "\n"; // Displays 2
 ?>
 
+---------------------------------------------------------------------------------------------------------------------------------------------
+
 
 Write a PHP class that sorts an ordered integer array with the help of sort() function.
 Sample array : array(11, -2, 4, 35, 0, 8, -9)
@@ -212,6 +220,9 @@ $sortarray = new array_sort(array(11, -2, 4, 35, 0, 8, -9));
 print_r($sortarray->alhsort())."\n";
 ?>
 
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+
 Write a PHP class 'Rectangle' that has properties for length and width. Implement methods to calculate the rectangle's area and perimeter.
 <?php
 class Rectangle {
@@ -236,6 +247,9 @@ $rectangle = new Rectangle(12, 9);
 echo "Area: " . $rectangle->getArea() . "</br>";
 echo "Perimeter: " . $rectangle->getPerimeter() . "</br>";
 ?>
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
 
 Write a PHP class called 'Shape' with an abstract method 'calculateArea()'. Create two subclasses, 'Triangle' and 'Rectangle', that implement the 'calculateArea()' method.
 <?php
@@ -278,6 +292,9 @@ $rectangle = new Rectangle(4, 6);
 echo "Rectangle Area: " . $rectangle->calculateArea() . "</br>";
 
 ?>
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
 
 Write a PHP interface called 'Resizable' with a method 'resize()'. Implement the 'Resizable' interface in a class called 'Square' and add functionality to resize the square.
 <?php
